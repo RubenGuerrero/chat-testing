@@ -1,10 +1,10 @@
-import Vue from 'vue';
+import Vue from 'vue'
 import Router from 'vue-router'
 
-import App from './components/App';
-import Chat from './components/Chat';
+import App from './App.vue';
+import Chat from './components/Chat.vue';
 
-Vue.config.debug = true
+Vue.config.debug = true;
 
 Vue.use(Router);
 
@@ -23,7 +23,4 @@ router.redirect({
   '*': '/chat'
 });
 
-router.start(App, '#app')
-
-
-
+router.start(App, '#app');
