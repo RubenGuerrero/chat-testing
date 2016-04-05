@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue Chat App</title>
+</head>
+<body>
+
+	<template id="chat-template">
+		<h2>Chat</h2>
+		<conversation-list></conversation-list>
+	</template>
+
+	<template id="conversation-list-template">
+		<h4>Conversation list</h4>
+		<ul v-for="conversation in conversations">
+			<li>{{conversation.name}}</li>
+		</ul>
+	</template>
+
+	<template id="app-template">
+		<div>
+			<h1>App title</h1>
+			<router-view keep-alive></router-view>
+			<footer>App footer</footer>
+		</div>
+	</template>
+
+	<div id="app"></div>
+
+	<script src="bundle.js"></script>
+	<script> document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>'); </script>
+
+</body>
+</html>
