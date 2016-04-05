@@ -4,8 +4,14 @@ import { Promise } from 'es6-promise'
 const store = new EventEmitter();
 
 let conversations = [
-  {name: 'Conversacion 1'},
-  {name: 'Conversacion 2'}
+  {
+    id: 1,
+    name: 'Conversacion 1'
+  },
+  {
+    id: 2,
+    name: 'Conversacion 2'
+  }
 ];
 
 store.getConversations = () => {

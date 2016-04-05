@@ -13,6 +13,9 @@ let router = new Router();
 router.map({
   '/chat': {
     component: Chat
+  },
+  '/chat/:id': {
+    component: Chat
   }
 });
 
